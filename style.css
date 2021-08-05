@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+section.inicio {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff7a85));
+  background: linear-gradient(#ff8f70, #ff7a85);
+  border-bottom-left-radius: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.inicio .logo {
+  padding: 2em;
+}
+
+section.inicio nav.menu_desktop {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.inicio nav.menu_desktop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  padding: 3em;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  position: relative;
+  left: -10em;
+}
+
+section.inicio nav.menu_desktop ul li {
+  text-align: center;
+  color: #4b5862;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 2em;
+}
+
+section.inicio nav.menu_desktop ul li h2 {
+  position: relative;
+  padding: 0;
+  width: 5em;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+section.inicio nav.menu_desktop ul li h2:hover {
+  text-decoration: underline;
+}
+
+section.inicio nav.menu_desktop ul li h2 img {
+  width: 1em;
+  position: absolute;
+  bottom: 0;
+  padding: .2em;
+}
+
+section.inicio nav.menu_desktop ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  margin-top: 2em;
+  background: white;
+  left: 0;
+  border-radius: 10%;
+  -webkit-transition: all .3 ease;
+  transition: all .3 ease;
+  padding: .5em;
+}
+
+section.inicio nav.menu_desktop ul li ul li {
+  padding: .5em;
+  color: #1f3f5b;
+  cursor: pointer;
+}
+
+section.inicio nav.menu_desktop ul li ul li:hover {
+  font-weight: 700;
+}
+
+section.inicio nav.menu_desktop .registro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+
+section.inicio nav.menu_desktop .registro button {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2em;
+  padding: 1em 1.5em;
+  outline: none;
+  margin-top: 1em;
+  margin-right: 1em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+section.inicio nav.menu_desktop .registro button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+section.inicio nav.menu_desktop .registro button.boton-activo {
+  color: white;
+  background: #ff7a85;
+}
+
+section.inicio nav.menu_mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.inicio nav.menu_mobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  position: fixed;
+  right: 2em;
+  top: -100%;
+  background: white;
+  padding: 3em;
+  border-radius: 10%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 10;
+}
+
+section.inicio nav.menu_mobile ul li {
+  text-align: center;
+  color: #4b5862;
+  font-weight: 700;
+}
+
+section.inicio nav.menu_mobile ul li h2 {
+  position: relative;
+  padding: 0;
+  width: 5em;
+}
+
+section.inicio nav.menu_mobile ul li h2 img {
+  width: 1.5em;
+  position: absolute;
+  bottom: 0;
+  right: -1.5em;
+  padding: 0;
+}
+
+section.inicio nav.menu_mobile ul li ul {
+  background-color: #c8c8cb;
+  color: #4b5862;
+  font-weight: 300;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+section.inicio nav.menu_mobile ul li ul li {
+  padding: .5em;
+}
+
+section.inicio nav.menu_mobile ul hr {
+  background-color: #4b5862;
+  width: 100%;
+  margin-top: 1em;
+}
+
+section.inicio nav.menu_mobile ul.inactive {
+  display: none;
+}
+
+section.inicio nav.menu_mobile .registro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.inicio nav.menu_mobile .registro button {
+  background: none;
+  color: #4b5862;
+  border: 1px solid white;
+  border-radius: 2em;
+  padding: 1em 1.5em;
+  outline: none;
+  margin-top: 1em;
+  font-weight: 700;
+}
+
+section.inicio nav.menu_mobile .registro button.boton-activo {
+  color: white;
+  background: #ff7a85;
+}
+
+section.inicio .menuH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.inicio .menuH img {
+  padding: 1.5em;
+  width: 5em;
+  margin: 1em 1em 0;
+  border-radius: 10%;
+}
+
+section.inicio .menuH img.inactive {
+  display: none;
+}
+
+section.inicio .menuH img:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+section.inicio .menuH.inactive {
+  display: none;
+}
+
+section.inicio .textoInicio {
+  margin: 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+
+section.inicio .textoInicio h1 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+section.inicio .textoInicio p {
+  color: white;
+  font-weight: 300;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+section.inicio .textoInicio .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.inicio .textoInicio .botones button {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2em;
+  padding: 1em 1.5em;
+  outline: none;
+  margin-left: 1em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+section.inicio .textoInicio .botones button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+section.inicio .textoInicio .botones button.boton-activo {
+  color: #ff7a85;
+  background: white;
+}
+
+section.diseno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.diseno h2 {
+  margin: 3em auto;
+  color: #1f3f5b;
+  font-size: 1.5em;
+}
+
+section.diseno .texto1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.diseno .texto1 h2 {
+  text-align: center;
+}
+
+section.diseno .texto1 p {
+  color: #4b5862;
+  margin: 0 5em;
+  line-height: 2em;
+}
+
+section.diseno .cuadroAzul {
+  background: #1f3f5b;
+  position: relative;
+  margin: 10em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-left-radius: 15%;
+}
+
+section.diseno .cuadroAzul .mockups {
+  position: absolute;
+  z-index: 20;
+  top: -7em;
+}
+
+section.diseno .cuadroAzul .mockups img {
+  max-width: 25em;
+}
+
+section.diseno .cuadroAzul .texto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15em;
+}
+
+section.diseno .cuadroAzul .texto2 h2 {
+  color: white;
+  font-weight: 500;
+  line-height: 2em;
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+section.diseno .cuadroAzul .texto2 p {
+  color: white;
+  line-height: 2em;
+  margin: 0 4em 4em 4em;
+}
+
+section.diseno .img img {
+  max-width: 30em;
+}
+
+footer {
+  background: #25252d;
+  border-top-right-radius: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+}
+
+footer h2 {
+  color: white;
+  font-size: 2em;
+  margin: 1.5em auto;
+}
+
+footer .product, footer .company, footer .conect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .product h3, footer .product a, footer .company h3, footer .company a, footer .conect h3, footer .conect a {
+  color: white;
+}
+
+footer .product a, footer .company a, footer .conect a {
+  line-height: 2em;
+  text-decoration: none;
+}
+
+footer .product a:hover, footer .company a:hover, footer .conect a:hover {
+  text-decoration: underline;
+}
+
+footer .product a:last-child, footer .company a:last-child, footer .conect a:last-child {
+  margin-bottom: 1em;
+}
+
+footer .product h3, footer .company h3, footer .conect h3 {
+  margin: 2em auto;
+}
+
+footer .attribution {
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4b5862;
+}
+
+footer .attribution a {
+  text-decoration: none;
+}
+
+@media all and (min-width: 1000px) {
+  section.inicio nav.menu_mobile {
+    display: none;
+  }
+  section.inicio nav.menu_desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
