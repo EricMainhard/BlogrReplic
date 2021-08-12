@@ -46,6 +46,9 @@ section.inicio {
                         transition: all .3s ease;
                         position: relative;
                         left: -10em;
+                        &.cerrado {
+                            display: none;
+                        }
                         li {
                             text-align: center;
                             color: $very_dark_blue;
@@ -54,11 +57,16 @@ section.inicio {
                             flex-direction: column;
                             justify-content: space-between;
                             margin: 0 2em;
+                            cursor: pointer;
                                 img {
                                     width: 1em;
                                     position: absolute;
                                     right: -1.5em;
                                     bottom: 0;
+                                    transition: transform .3s ease;
+                                    &.rotar {
+                                        transform: rotate(180deg);
+                                    }
                                 }
                             
                             
@@ -131,6 +139,12 @@ section.inicio {
                             color: $very_dark_blue;
                             padding: .5em;
                             cursor: pointer;
+                            img {
+                                transition: transform .3s ease;
+                                &.rotar {
+                                    transform: rotate(180deg);
+                                }
+                            }
                         }
                     }       
                     &.activo {

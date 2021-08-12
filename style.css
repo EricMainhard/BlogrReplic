@@ -52,6 +52,10 @@ section.inicio nav.menu_desktop ul {
   left: -10em;
 }
 
+section.inicio nav.menu_desktop ul.cerrado {
+  display: none;
+}
+
 section.inicio nav.menu_desktop ul li {
   text-align: center;
   color: #4b5862;
@@ -67,6 +71,7 @@ section.inicio nav.menu_desktop ul li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 2em;
+  cursor: pointer;
 }
 
 section.inicio nav.menu_desktop ul li img {
@@ -74,6 +79,15 @@ section.inicio nav.menu_desktop ul li img {
   position: absolute;
   right: -1.5em;
   bottom: 0;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+section.inicio nav.menu_desktop ul li img.rotar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 section.inicio nav.menu_desktop ul li ul {
@@ -182,6 +196,18 @@ section.inicio nav.menu_mobile ul.lista-principal li {
   color: #4b5862;
   padding: .5em;
   cursor: pointer;
+}
+
+section.inicio nav.menu_mobile ul.lista-principal li img {
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+section.inicio nav.menu_mobile ul.lista-principal li img.rotar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 section.inicio nav.menu_mobile ul.activo {
