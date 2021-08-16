@@ -16,13 +16,26 @@ function abrirMenu(){
 }
 
 function desplegarMenu(){
-    for(item of subMenu){
-        item.classList.toggle("abierto");
-    };
-    for(flecha of flechas){
-        flecha.classList.toggle("rotar");
+    titulos[0].onclick = () => {
+        subMenu[0].classList.toggle("abierto");
+        flechas[0].classList.toggle("rotar");
+    }
+    titulos[1].onclick = () => {
+        subMenu[1].classList.toggle("abierto");
+        flechas[1].classList.toggle("rotar");
+    }
+    titulos[2].onclick = () => {
+        subMenu[2].classList.toggle("abierto");
+        flechas[2].classList.toggle("rotar");
     }
 }
+
+// for(item of subMenu){
+//     item.classList.toggle("abierto");
+// };
+// for(flecha of flechas){
+//     flecha.classList.toggle("rotar");
+// }
 
 ///MENU MOBILE///
 
@@ -37,10 +50,33 @@ titulosDesktop.forEach(function(item){
 });
 
 function desplegarMenuDesktop(){
-    for (menu of menus) {
-        menu.classList.toggle("cerrado")};
-    for(flecha of flechas){
-        flecha.classList.toggle("rotar");
+    titulosDesktop[0].onclick = () => {
+        menus[0].classList.toggle("cerrado");
+        flechas[0].classList.toggle("rotar");
+    }
+    titulosDesktop[1].onclick = () => {
+        menus[1].classList.toggle("cerrado");
+        flechas[1].classList.toggle("rotar");
+    }
+    titulosDesktop[2].onclick = () => {
+        menus[2].classList.toggle("cerrado");
+        flechas[2].classList.toggle("rotar");
     }
 }
 
+
+// if (titulosDesktop[0].click) {
+//     menus[0].classList.toggle("cerrado");
+// }
+// else if (titulosDesktop[1].click) {
+//     menus[1].classList.toggle("cerrado");
+// }
+// else if (titulosDesktop[2].click) {
+//     menus[2].classList.toggle("cerrado");
+// }
+
+// for (menu of menus) {
+//     menu.classList.toggle("cerrado")};
+// for(flecha of flechas){
+//     flecha.classList.toggle("rotar");
+// }
