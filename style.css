@@ -436,7 +436,7 @@ section.diseno .cuerpo .texto1 p {
 }
 
 section.diseno .cuerpo .img img {
-  max-width: 30em;
+  max-width: 100%;
 }
 
 section.cuadroAzul {
@@ -466,7 +466,7 @@ section.cuadroAzul .mockups {
 }
 
 section.cuadroAzul .mockups img {
-  max-width: 25em;
+  max-width: 100%;
 }
 
 section.cuadroAzul .texto2 {
@@ -553,8 +553,8 @@ section.laptop .textos .texto1 p {
   line-height: 2em;
 }
 
-section.laptop .textos .img img {
-  max-width: 30em;
+section.laptop .img img {
+  max-width: 100%;
 }
 
 footer {

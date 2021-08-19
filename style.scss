@@ -302,7 +302,7 @@ section.diseno{
         }
         .img {
             img {
-                max-width: 30em;
+                max-width: 100%;
             }
             
         }
@@ -325,7 +325,7 @@ section.cuadroAzul {
             z-index: 20;
             top: -7em;
             img {
-                max-width: 25em;
+                max-width: 100%;
             }
         }
          
@@ -377,12 +377,12 @@ section.laptop{
                 line-height: 2em;
             }
         }
-        .img {
-            img {
-                max-width: 30em;
-            }
-            
+    }
+    .img {
+        img {
+            max-width: 100%;
         }
+        
     }
     
 }
